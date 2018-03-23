@@ -52,7 +52,7 @@ class App extends Component {
       }
 
     return (
-        <BrowserRouter>
+        <BrowserRouter basePath="/">
             <div>
               <Layout>
                   {routes}
