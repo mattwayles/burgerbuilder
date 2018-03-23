@@ -13,11 +13,11 @@ const sideDrawer = (props) => {
     return (
         <Auxil>
             <Backdrop show={props.open} clicked={props.closed}/>
-            <div className={attachedClasses.join(' ')}>
+            <div className={attachedClasses.join(' ')} onClick={props.closed}>
                 <div className={classes.Logo}>
                     <Logo />
                     <nav>
-                        <NavigationItems />
+                        <NavigationItems isAuth={props.isAuth} />
                     </nav>
                 </div>
             </div>
